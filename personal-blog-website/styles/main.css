@@ -1,0 +1,102 @@
+.container{
+    background-color: antiquewhite;
+    height: 900px;
+    width: fill;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr 75px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; 
+    border: 2px solid black;
+    grid-template-areas: 
+    "hd  hd"
+    "mc  sc"
+    "ft ft";
+    
+    
+}
+.header{
+    margin: 10px;
+    
+    border: 2px solid black;
+    width: fit;
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    background-color: lavenderblush;
+    
+}
+.content{
+
+    display: flex;
+    margin: 5%;
+    padding: 5%;
+}
+#main-content{
+    
+    grid-area: mc;
+    text-align: center;
+}
+#side-content{
+    padding: 5%;
+    grid-area: sc;
+    text-align: center;
+    
+}
+#blog-posts{
+    margin: 1%;
+    padding: 1%;
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    
+    border: 2px solid white;
+    background-color: rgb(233, 197, 156);
+}
+
+.footer{
+    height: fit-content;
+    width: 1fr;
+    margin: 1%;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    grid-area: ft;
+    background-color: lavenderblush;
+    
+}
+#h-logo{
+    margin: 20px;
+    width: 2rem;
+}
+@media only screen and (max-width: 650px) {
+    .container{
+        background-color: antiquewhite;
+        height: max-content;
+        width: fill;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1fr 1fr 75px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px; 
+        border: 2px solid black;
+        grid-template-areas: 
+        "hd  hd"
+        "mc  mc"
+        "sc  sc"
+        "ft ft";
+        
+        
+    }
+    .header{
+        margin: 10px;
+        
+        border: 2px solid black;
+        width: fit;
+        grid-area: hd;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(187, 161, 169);
+        
+    }
+}
