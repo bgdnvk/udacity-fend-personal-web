@@ -23,6 +23,7 @@
     grid-area: hd;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     background-color: lavenderblush;
     
 }
@@ -71,7 +72,7 @@
 }
 @media only screen and (max-width: 650px) {
     .container{
-        background-color: antiquewhite;
+        background-color: rgb(228, 223, 216);
         height: max-content;
         width: fill;
         display: grid;
@@ -85,18 +86,9 @@
         "mc  mc"
         "sc  sc"
         "ft ft";
-        
-        
     }
     .header{
-        margin: 10px;
-        
-        border: 2px solid black;
-        width: fit;
-        grid-area: hd;
-        display: flex;
-        flex-direction: row;
         background-color: rgb(187, 161, 169);
-        
     }
+
 }

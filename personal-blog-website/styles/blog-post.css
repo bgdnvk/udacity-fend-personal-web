@@ -1,0 +1,22 @@
+@import "../styles/main.css";
+.container{
+    background-color: antiquewhite;
+    height: max-content;
+    width: fill;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 75px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; 
+    border: 2px solid black;
+    grid-template-areas: 
+    "hd  "
+    "mc  "
+    "ft ";
+    
+}
+#home-logo{
+    margin: 20px;
+    width: 2rem;
+}
